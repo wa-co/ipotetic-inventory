@@ -6,7 +6,7 @@ namespace Ipotetic_Inventory
 
 public class Inventory
     {
-        public decimal Money { get; set; }
+        private decimal Money { get; set; }
         public Dictionary<Item, int> Items { get; } = new Dictionary<Item, int>();
 
         public Inventory(decimal money)
