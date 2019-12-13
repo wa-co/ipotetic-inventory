@@ -11,7 +11,7 @@ namespace Ipotetic_Inventory
             var sword = new Item(2, ItemType.Tool, 250);
 
             inv.Buy(banana);
-            Console.WriteLine(inv.Money);
+            Console.WriteLine(inv.GetMoney());
 
         }
     }
