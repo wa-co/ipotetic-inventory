@@ -5,12 +5,14 @@ namespace Ipotetic_Inventory
 {
 public struct Item : IEquatable<Item>, ISellable
     {
+        public string Name { get; set; }
         public int Id { get; set; }
         public ItemType Type { get; set; }
         public decimal Price { get; set; }
 
-        public Item(int id, ItemType type, decimal price)
+        public Item(int id, ItemType type, decimal price, string name)
         {
+            Name = name;
             Id = id;
             Type = type;
             Price = price;
